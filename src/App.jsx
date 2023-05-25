@@ -1,14 +1,16 @@
 import Navbar from "./components/layaout/navbar/Navbar";
-import { ProductList } from "./components/page/productList/productList";
+import { ItemListContainer } from "./components/page/ItemListContainer/ItemListContainer";
 
 
 const App = () => {
 
+let modelo = "Envase x 30ml"
+
   return (
     <div>
-  <Navbar />
-  <ProductList />
-  </div>
+        <Navbar />
+        <ItemListContainer modelo={modelo} precio={"$25"} />
+    </div>
   )
 }
 
